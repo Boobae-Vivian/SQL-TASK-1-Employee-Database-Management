@@ -9,7 +9,7 @@ In this database management task, the goal is to create a database named 'Staff'
 1. Create a comprehensive database named 'Staff'. Within this database, create two tables, 'Staff_Info' and 'Staff_Salary', with specific constraints to ensure data integrity and accuracy. The structure of the tables should include the following columns:
    - 'Staff_Info' (ID, Name, Age, DOE, Contract_Duration)
    - 'Staff_Salary' (ID, Salary, Yearly_Increment)
-2. Insert into 'staff_info' and 'staff_salary' ten (10) rows of informations
+2. Insert into 'staff_info' and 'staff_salary', ten (10) rows of informations
 3. Construct SQL queries to extract specific details:
    - The Name and Age from the 'Staff_Info' table.
    - The ID and Salary from the 'Staff_Salary' table.
@@ -28,7 +28,36 @@ In this database management task, the goal is to create a database named 'Staff'
 14. Execute a query to display the Employees' Names and Date of Entry (DOE) in a single column named 'Employee's Brief'.
 
 ## SKILLS AND CONCEPTS DEMOSTRATED
-- 
+
+The task involves various skills and concepts related to database management and SQL. Here are the possible skills and concepts to be demonstrated:
+1. Database Design:
+   - Understanding of how to design a database schema, including defining tables, primary keys, and relationships.
+2. Constraints:
+   - Application of constraints such as primary key constraints, not null constraints, unique constraints, default constraints and foreign key constraints to ensure data integrity.
+3. Data Insertion:
+   - Knowledge of inserting data into tables, including handling constraints and ensuring data consistency.
+4. SQL Queries:
+   - Writing SQL queries to retrieve specific information from the database, including SELECT statements with various conditions.
+5. Data Modification:
+   - Ability to modify the structure of the database, including renaming tables, columns, and changing data types.
+6. Data Types:
+   - Understanding and handling data types, including converting data types to meet specific requirements.
+7. Column Addition:
+   - Adding new columns to existing tables to accommodate additional information.
+8. Table Renaming:
+   - Renaming tables to adhere to standardized naming conventions and improve table clarity.
+9. Data Transformation:
+   - Transforming data during retrieval, such as displaying concatenated values in a single column.
+10. SQL Execution:
+    - Executing SQL queries and modification statements using a database management system.
+      
+By completing the task successfully, one can demonstrate proficiency in these skills and concepts, showcasing a comprehensive understanding of database administration and SQL manipulation.
+
+## RESULTS AND DISCUSSIONS
+
+### 1. Create a comprehensive database named 'Staff'. Within this database, create two tables, 'Staff_Info' and 'Staff_Salary':
+
+To 
     
 
 

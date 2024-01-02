@@ -13,7 +13,7 @@ In this database management task, the goal is to create a database named 'Staff'
 3. Construct SQL queries to extract specific details:
    - The Name and Age from the 'Staff_Info' table.
    - The ID and Salary from the 'Staff_Salary' table.
-5. Rename the existing tables to 'Employee_Info' and 'Employee_Salary,'
+5. Rename the existing tables to 'Employee_Info' and 'Employee_Salary'
 6. Change the 'ID' columns in both table to 'Employee_ID.'
 7. Alter the 'Employee_ID' columns data types to 'Text' data types
 8. Create a new column named 'Department' in the 'Employee_Salary' table
@@ -78,15 +78,61 @@ CREATE TABLE Staff_Salary
 Salary INT NOT NULL,
 Yearly_Increment VARCHAR(50) DEFAULT "Three months");
 
-
 To execute these commands, initiate the analysis by clicking the fourth icon within the workbench interface.
 Subsequently, the 'staff' database, along with the 'staff_info' and 'staff_salary' tables, will be created.
+```
 
-````
 
 Staff and Staff_Info        | Staff_Salary
 :-----------------:|:------------------:
 ![](TASK1a.png)    |![](TASK1b.png)
+
+
+### 2. Insert into 'staff_info' and 'staff_salary', ten (10) rows of informations: 
+
+To insert ten (10) rows of information into both tables, the 'insert' command will be utilized. The syntax for this command, which adds new data to a table, is as follows:
+
+```sql
+INSERT INTO Staff_Info
+(Colunm 1, Column 2, Column 3, Column 4, Column 5), VALUES
+(Value 1, Value 2, Value 3, Value 4, Value 5);
+
+INSERT INTO Staff_Salary
+(Colunm 1, Column 2, Column 3), VALUES
+(Value 1, Value 2, Value 3);
+```
+
+Staff_Info Information        | Staff_Salary Information
+:-----------------:|:------------------:
+![](TASK1c.png)    |![](TASK1d.png)
+
+
+### 3. Construct SQL queries to extract specific details from 'staff_info' and 'staff_salary' tables:
+
+To retrieve the name and age from the 'staff_info' table, as well as the ID and salary from the 'staff_salary' table, the 'SELECT' command will be utilized. The syntax for this command is as follows:
+
+```sql
+USE Staff;
+SELECT Column 1, Column 2 FROM Staff_info;
+
+USE Staff;
+SELECT Column 1, Column 2 FROM Staff_Salary;
+```
+
+Name and Age        | ID and Salary
+:-----------------:|:------------------:
+![](TASK1e.png)    |![](TASK1f.png)
+
+
+### 4. Rename the existing tables to 'Employee_Info' and 'Employee_Salary':
+
+
+
+
+
+
+
+
 
 
     

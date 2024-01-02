@@ -6,8 +6,6 @@ In this database management task, the goal is to create a database named 'Staff'
 
 ## PROBLEM STATEMENT
 
-
-Problem Statement:
 1. Create a comprehensive database named 'Staff'. Within this database, create two tables, 'Staff_Info' and 'Staff_Salary', with specific constraints to ensure data integrity and accuracy. The structure of the tables should include the following columns:
    - 'Staff_Info' (ID, Name, Age, DOE, Contract_Duration)
    - 'Staff_Salary' (ID, Salary, Yearly_Increment)
@@ -19,11 +17,18 @@ Problem Statement:
 6. Change the 'ID' columns in both table to 'Employee_ID.'
 7. Alter the 'Employee_ID' columns data types to 'Text' data types
 8. Create a new column named 'Department' in the 'Employee_Salary' table
-9. For Employees with the following IDs, update their Departments with the specified
+9. For Employees with the following IDs, update their Departments with the specified:
    - IDs 1, 3, 7 = IT
    - IDs 2, 5, 9 = Advertising
    - IDs 4, 6, 8, 10 = Communications
-10. 
+10. Execute a query to retrieve the Month, Year, and Day of each employee's entry into the company
+11. Execute and update a query to add 10 years to the entry year of each employee as their 'Year_of_Exit'
+12. Replace the department ‘Communications’ with ‘Stakeholders’
+13. Modify the 'Name' column to ensure that all values are in UPPER CASE
+14. Execute a query to display the Employees' Names and Date of Entry (DOE) in a single column named 'Employee's Brief'.
+
+## SKILLS AND CONCEPTS DEMOSTRATED
+- 
     
 
 

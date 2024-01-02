@@ -8,18 +8,24 @@ In this database management task, the goal is to create a database named 'Staff'
 
 
 Problem Statement:
-1. Create a comprehensive database named 'Staff'
-  - Using the database Staff, create two tables named 'Staff_Info' and 'Staff_Salary', with specific constraints to ensure data integrity and accuracy.
+1. Create a comprehensive database named 'Staff'. Within this database, create two tables, 'Staff_Info' and 'Staff_Salary', with specific constraints to ensure data integrity and accuracy. The structure of the tables should include the following columns:
+   - 'Staff_Info' (ID, Name, Age, DOE, Contract_Duration)
+   - 'Staff_Salary' (ID, Salary, Yearly_Increment)
+2. Insert into 'staff_info' and 'staff_salary' ten (10) rows of informations
+3. Construct SQL queries to extract specific details:
+   - The Name and Age from the 'Staff_Info' table.
+   - The ID and Salary from the 'Staff_Salary' table.
+5. Rename the existing tables to 'Employee_Info' and 'Employee_Salary,'
+6. Change the 'ID' columns in both table to 'Employee_ID.'
+7. Alter the 'Employee_ID' columns data types to 'Text' data types
+8. Create a new column named 'Department' in the 'Employee_Salary' table
+9. For Employees with the following IDs, update their Departments with the specified
+   - IDs 1, 3, 7 = IT
+   - IDs 2, 5, 9 = Advertising
+   - IDs 4, 6, 8, 10 = Communications
+10. 
+    
 
-Furthermore, the absence of standardized constraints has led to inconsistencies in the data, making it challenging to enforce rules related to salary ranges (5000-20000) and age ranges (23-40). Additionally, the lack of a systematic approach to data insertion has resulted in difficulties in retrieving specific information about the staff.
-
-The organization is encountering issues in obtaining essential information about the staff, such as their names and ages, which hinders decision-making processes. Moreover, there is a need for a systematic approach to retrieving salary details, specifically the ID and salary information.
-
-To enhance the database structure and naming conventions, there is a necessity to rename the existing tables to 'Employee_Info' and 'Employee_Salary,' along with changing the primary key column names from 'ID' to 'Employee_ID.' Additionally, there is a requirement to alter the data types of the primary key columns to 'Text' for improved compatibility and uniformity.
-
-Lastly, the organization has identified a need to expand the database by incorporating a new column named 'Department' in the 'Employee_Salary' table. The current system lacks this vital information, hindering the ability to associate salary details with specific departments.
-
-In summary, the organization faces challenges related to the absence of a structured database system, inconsistencies in data due to the lack of constraints, difficulties in retrieving essential information, and the need for improvements in database naming conventions and structure. Addressing these issues through the proposed enhancements will contribute to a more efficient and effective employee management system.
 
 
 

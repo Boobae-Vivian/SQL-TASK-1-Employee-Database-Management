@@ -57,7 +57,38 @@ By completing the task successfully, one can demonstrate proficiency in these sk
 
 ### 1. Create a comprehensive database named 'Staff'. Within this database, create two tables, 'Staff_Info' and 'Staff_Salary':
 
-To 
+To initiate the creation of a database named 'staff' and simultaneously establish two tables, namely 'staff_info' and 'staff_salary' within the database, the initial set of commands to be employed are as follows:
+
+```sql
+CREATE DATABASE Staff;
+
+
+USE Staff
+CREATE TABLE Staff_Info
+(ID INT NOT NULL,
+Name VARCHAR(50) NOT NULL,
+Age INT DEFAULT "25",
+DOE DATE DEFAULT "2022-06-30",
+Contract_Duration VARCHAR(50) DEFAULT "Three months");
+
+
+USE Staff;
+CREATE TABLE Staff_Salary
+(ID INT UNIQUE,
+Salary INT NOT NULL,
+Yearly_Increment VARCHAR(50) DEFAULT "Three months");
+
+
+To execute these commands, initiate the analysis by clicking the fourth icon within the workbench interface.
+Subsequently, the 'staff' database, along with the 'staff_info' and 'staff_salary' tables, will be created.
+
+````
+
+Staff and Staff_Info        | Staff_Salary
+:-----------------:|:------------------:
+![](TASK1a.png)    |![](TASK1b.png)
+
+
     
 
 

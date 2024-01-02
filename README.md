@@ -126,6 +126,8 @@ Name and Age        | ID and Salary
 
 ### 4. Rename the existing tables to 'Employee_Info' and 'Employee_Salary':
 
+To rename the staff_info and staff_salary table to 'employee_info and employee_salary respectively
+
 
 
 

@@ -113,10 +113,10 @@ To retrieve the name and age from the 'staff_info' table, as well as the ID and 
 
 ```sql
 USE Staff;
-SELECT Column 1, Column 2 FROM Staff_info;
+SELECT Name,Age FROM Staff_info;
 
 USE Staff;
-SELECT Column 1, Column 2 FROM Staff_Salary;
+SELECT ID, Salary FROM Staff_Salary;
 ```
 
 Name and Age        | ID and Salary
@@ -317,6 +317,14 @@ Executing this command will concatenate the 'Name' and 'DOE' columns and update 
 ![](Task3c.png)
 
 ## CONCLUSION
+
+In conclusion, this task encompassed various aspects of database management and SQL query execution, showcasing a range of skills and concepts. The creation of the 'Staff' database involved meticulous design of two tables, 'Employee_Info' and 'Employee_Salary,' with well-defined constraints to ensure data accuracy and integrity. The subsequent insertion of 10 rows of information into both tables demonstrated proficiency in data manipulation.
+
+Queries were crafted to extract specific information, including retrieving names and ages from the 'Employee_Info' table and IDs and salaries from the 'Employee_Salary' table. The renaming of tables, transitioning from 'Staff_Info' and 'Staff_Salary' to 'Employee_Info' and 'Employee_Salary,' respectively, along with the change in the primary key columns from 'ID' to 'Employee_ID' and the alteration of data types to 'Text,' contributed to improved database structure and clarity.
+
+The addition of a new column named 'Department' to the 'Employee_Salary' table further enhanced the database's capability to associate salary details with specific departments. Moreover, the task demonstrated the utilization of SQL functions to manipulate and update data, such as converting the 'Name' column to uppercase and calculating 'Year_of_Exit' based on the addition of 10 years to the entry year.
+
+Overall, the successful execution of this task reflects a comprehensive understanding of database design, SQL query formulation, and data manipulation techniques, contributing to the creation of an efficient and well-structured employee management system within the 'Staff' database.
 
 
 

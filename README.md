@@ -261,9 +261,15 @@ The specific command for this task is as follows:
 ALTER Employee_Info ADD COLUMN Year_of_Exit DATE;
 UPDATE Employee_Info
 SET Year_of_Exit = DATE_ADD(DOE, INTERVAL 10 YEAR);
-```
+
 Executing these commands will add the 'Year_of_Exit' column and update it by adding 10 years to the date of entry for each employee in the 'employee_info' table.
+```
+
 ![](TASK2G.png)
+
+### 11.  Replace the department ‘Communications’ with ‘Stakeholders’:
+
+
 
 
 

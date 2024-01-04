@@ -230,6 +230,48 @@ Executing this command will perform the analysis and update the 'Department' col
 
 ### 9. Execute a query to retrieve the Month, Year, and Day of each employee's entry into the company:
 
+To execute a query for retrieving the month, year, and day of each employee's entry into the company, SQL date and time functions will be employed to manipulate date values. First, three columns, namely 'Year,' 'Month,' and 'Day,' should be added. Subsequently, each column will be updated by extracting values from the 'Date' column. The syntax for this operation is as follows:
+
+```sql
+UPDATE Table_name
+SET Column_name = YEAR(Date_column) or MONTH(Date_column) or DAY(Date_column);
+
+The specific commands for this task are outlined below:
+
+UPDATE Employee_Info SET Year = YEAR(DOE);
+UPDATE Employee_Info SET Month = MONTHNAME(DOE);
+UPDATE Employee_Info SET Day = DAYNAME(DOE);
+
+Executing this analysis will extract the year, month, and day from the 'Date' column and update the newly added 'Year,' 'Month,' and 'Day' columns, respectively.
+```
+
+![](TASK2F.png)
+
+### 10. Execute and update a query to add 10 years to the entry year of each employee as their 'Year_of_Exit'.
+
+To execute and update a query that adds 10 years to the entry year of each employee, creating a new column named 'Year_of_Exit' in the 'employee_info' table  using the 'ALTER' command would be done and subsequently the 'Year_of_Exit' column would be updated by adding 10 years to the employees' date of entry. The syntax for these operations are as follows:
+
+```sql
+ALTER Table_name ADD COLUMN New_column_name Date_type;
+UPDATE Table_name
+SET Column_name = DATE_ADD(Date_column, INTERVAL N); 
+
+The specific command for this task is as follows:
+
+ALTER Employee_Info ADD COLUMN Year_of_Exit DATE;
+UPDATE Employee_Info
+SET Year_of_Exit = DATE_ADD(DOE, INTERVAL 10 YEAR);
+```
+Executing these commands will add the 'Year_of_Exit' column and update it by adding 10 years to the date of entry for each employee in the 'employee_info' table.
+![](TASK2G.png)
+
+
+
+
+
+
+
+
 
 
 

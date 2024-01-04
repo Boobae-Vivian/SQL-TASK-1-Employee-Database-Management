@@ -14,7 +14,7 @@ In this database management task, the goal is to create a database named 'Staff'
    - The Name and Age from the 'Staff_Info' table.
    - The ID and Salary from the 'Staff_Salary' table.
 5. Rename the existing tables to 'Employee_Info' and 'Employee_Salary'
-6. Change the 'ID' columns in both table to 'Employee_ID.'
+6. Change the 'ID' columns in both table to 'Employee_ID'
 7. Alter the 'Employee_ID' columns data types to 'Text' data types
 8. Create a new column named 'Department' in the 'Employee_Salary' table
 9. For Employees with the following IDs, update their Departments with the specified:
@@ -126,7 +126,117 @@ Name and Age        | ID and Salary
 
 ### 4. Rename the existing tables to 'Employee_Info' and 'Employee_Salary':
 
-To rename the staff_info and staff_salary table to 'employee_info and employee_salary respectively
+To rename the 'staff_info' and 'staff_salary' tables to 'employee_info' and 'employee_salary,' the 'ALTER' command will be used with the following syntax:
+
+```sql
+ALTER TABLE Old_table_name RENAME TO New_table_name;
+
+Specifically, the commands for this task would be:
+
+ALTER TABLE Staff_Info RENAME TO Employee_Info;
+ALTER TABLE Staff_Salary RENAME TO Employee_Salary;
+
+Executing these commands will change the original table names from 'staff_info' and 'staff_salary' to
+'employee_info' and 'employee_salary,' respectively.
+```
+
+![](TASK2A.png)
+
+### 5. Change the 'ID' columns in both table to 'Employee_ID':
+
+To modify the ID columns in both tables to 'Employee_ID,' the 'ALTER' command will be utilized with the following syntax:
+
+```sql
+ALTER TABLE Table_name CHANGE COLUN Old_column_name new_column_name Data_type;
+
+Specifically, the commands for this task would be:
+
+ALTER TABLE Employee_Info CHANGE COLUMN ID Employee_ID INT;
+ALTER TABLE Employee_Salary CHANGE COLUMN ID Employee_ID INT;
+
+The execution of these commands will change the initial ID column names to 'Employee_ID'.
+```
+Employee_Info Table        | Employee_Salary Table
+:-------------------------:|:------------------:
+![](TASK2B.png)            |![](TASK2B1.png)
+
+### 6.  Alter the 'Employee_ID' columns data types to 'Text' data types:
+
+To modify the data types of the 'Employee_ID' columns to text (VARCHAR), considering that the initial data type is Integer (INT), the 'ALTER' command will be used with the following syntax:
+
+```sql
+ALTER TABLE Table_name MODIFY COLUMN Column_name VARCHAR(50);
+
+The specific commands for this task are as follows:
+
+ALTER TABLE Employee_Info MODIFY COLUMN Employee_ID VARCHAR(50);
+ALTER TABLE Employee_Salary MODIFY COLUMN Employee_ID VARCHAR(50);
+
+Executing these commands will alter the data types of the 'Employee_ID' columns from Integer to text (VARCHAR).
+```
+
+Employee_Info Table        | Employee_Salary Table
+:-------------------------:|:------------------:
+![](TASK2E.png)            |![](TASK2E1.png)
+
+### 7.  Create a new column named 'Department' in the 'Employee_Salary' table
+
+To add a new column named 'Department' to the 'Employee_Salary' table, the 'ALTER' command will be utilized with the following syntax:
+
+```sql
+ALTER TABLE Table_name ADD COLUMN New_column_name Data_type;
+
+The specific command for this task is as follows:
+
+ALTER TABLE Employee_Salary ADD COLUMN Department VARCHAR(50);
+
+Upon executing this command, a new column named 'Department' will be created in the 'Employee_Salary' table.
+```
+
+![](TASK2C.png)
+
+### 8. For Employees with the following IDs, update their Departments with the specified
+   - IDs 1, 3, 7 = IT
+   - IDs 2, 5, 9 = Advertising
+   - IDs 4, 6, 8, 10 = Communications:
+
+To update the 'Department' column with specific values, the 'UPDATE' command will be utilized with the following syntax:
+
+```sql
+UPDATE Table_name
+SET Column_name =
+CASE
+WHEN Condition = Criteria THEN Value
+-----
+END;
+
+The specific command for this task is as follows:
+
+UPDATE Employee_Salary
+SET Department =
+CASE
+WHEN Employee_ID = 1 THEN IT
+WHEN Employee_ID = 2 THEN Advertising
+WHEN Employee_ID = 4 THEN Communications
+WHEN Employee_ID = 3 THEN IT
+------
+END;
+
+Executing this command will perform the analysis and update the 'Department' column with values such as
+'IT,' 'Advertising,' and 'Communications' where applicable.
+```
+
+![](TASK2D.png)
+
+### 9. Execute a query to retrieve the Month, Year, and Day of each employee's entry into the company:
+
+
+
+
+
+
+
+
 
 
 

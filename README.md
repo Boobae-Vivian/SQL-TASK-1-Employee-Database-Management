@@ -269,6 +269,63 @@ Executing these commands will add the 'Year_of_Exit' column and update it by add
 
 ### 11.  Replace the department ‘Communications’ with ‘Stakeholders’:
 
+To replace the department label 'Communications' with 'Stakeholders,' the 'UPDATE' command, coupled with the string function 'REPLACE,' will be employed. The syntax for this operation is as follows:
+
+```sql
+UPDATE Table_name
+SET Column_name = REPLACE(Column_name, "old value", "new value");
+
+The specific command for this task is outlined below:
+
+UPDATE Employee_Salary
+SET Department = REPLACE(Department, "Communications", "Stakeholders");
+
+Executing this command will update the 'Department' column in the 'Employee_Salary' table, replacing occurrences of 'Communications' with 'Stakeholders.'
+```
+
+![](Task3a.png)
+
+### 12. Modify the 'Name' column to ensure that all values are in UPPER CASE:
+
+To adjust the 'Name' column, ensuring that all values are in uppercase, the 'UPPER' function will be employed. The syntax for this operation is as follows:
+
+```sql
+UPDATE Table_name
+SET Column_name = UPPER(Column_name);
+
+The specific command for this task is as follows:
+
+UPDATE Employee_Info
+SET Name = UPPER(Name);
+
+Executing this command will update the 'Name' column in the 'Employee_Info' table, converting all values to uppercase.
+```
+
+![](Task3b.png)
+
+### 13. Execute a query to display the Employees' Names and Date of Entry (DOE) in a single column named 'Employee's Brief'.
+
+To perform this task, initiate by creating a new column named 'Employees_Brief' using the 'ALTER' command. Subsequently, utilize the 'UPDATE' command along with the 'CONCAT' string function with the following syntax:
+
+```sql
+UPDATE Employee_Info
+SET Employees_Brief = CONCAT(Name, " ", DOE);
+
+Executing this command will concatenate the 'Name' and 'DOE' columns and update the 'Employees_Brief' column in the 'Employee_Info' table.
+```
+
+![](Task3c.png)
+
+## CONCLUSION
+
+
+
+
+
+
+
+
+
 
 
 
